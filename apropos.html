@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+  <meta charset="UTF-8">
+  <title>Apropos - DEVWEB STUDIO</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#0f0728] text-gray-100 min-h-screen flex flex-col">
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0f0728]/80 backdrop-blur-md border-b border-purple-900/30">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-extrabold gradient-text">DEVWEB.STUDIO</a>
+      <div class="space-x-6 text-sm font-semibold text-gray-300">
+        <a href="index.html" class="hover:text-purple-400">Fandraisana</a>
+        <a href="apropos.html" class="text-purple-400">Apropos</a>
+        <a href="services.html" class="hover:text-purple-400">Services</a>
+        <a href="realisations.html" class="hover:text-purple-400">Portfolio</a>
+        <a href="contact.html" class="hover:text-purple-400">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- OPTION 2: À propos & OPTION 4: Mes Compétences -->
+  <main class="pt-36 pb-20 px-6 max-w-5xl mx-auto space-y-16">
+    <div class="text-center space-y-4">
+      <h1 class="text-4xl font-extrabold gradient-text">Momba Ahy sy ny Lalako</h1>
+      <p class="text-gray-400 max-w-2xl mx-auto">Mpandraharaha sy Développeur impassionné amin'ny famoronana zava-baovao ara-teknolojia.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" class="rounded-2xl border border-purple-500/20 shadow-xl">
+      <div class="space-y-4 text-gray-300 leading-relaxed">
+        <h2 class="text-2xl font-bold text-white">Miarahaba! Izaho no Lead Developer.</h2>
+        <p>Miasa amin'ny tontolon'ny informatika sy ny création web mandritra ny taona maro. Ny tanjoko dia ny hanome vahaolana ara-teknika tsotra, tsara bika, ary mamaly ny filàn'ny mpanjifa hitombo.</p>
+        <p>Manana traikefa amin'ny HTML5, Tailwind CSS, JavaScript, Firebase, ary SEO modernina.</p>
+      </div>
+    </div>
+
+    <!-- OPTION 4: Mes Compétences (Progress Bars) -->
+    <div class="space-y-6 pt-8 border-t border-purple-900/30">
+      <h2 class="text-2xl font-bold gradient-text text-center">Ireo Fahaizana sy Solaitra (Compétences)</h2>
+      <div class="space-y-4 max-w-2xl mx-auto">
+        <div>
+          <div class="flex justify-between text-sm mb-1 font-semibold"><span>Frontend (HTML/Tailwind/JS)</span><span>95%</span></div>
+          <div class="w-full bg-slate-800 rounded-full h-3 overflow-hidden"><div class="bg-purple-500 h-full rounded-full" style="width: 95%"></div></div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm mb-1 font-semibold"><span>Backend & Firebase Firestore</span><span>88%</span></div>
+          <div class="w-full bg-slate-800 rounded-full h-3 overflow-hidden"><div class="bg-pink-500 h-full rounded-full" style="width: 88%"></div></div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm mb-1 font-semibold"><span>UI/UX Design (Figma)</span><span>80%</span></div>
+          <div class="w-full bg-slate-800 rounded-full h-3 overflow-hidden"><div class="bg-purple-400 h-full rounded-full" style="width: 80%"></div></div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
