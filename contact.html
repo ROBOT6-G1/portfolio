@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact & Réservation - DEVWEB STUDIO</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#0f0728] text-gray-100 min-h-screen flex flex-col">
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0f0728]/80 backdrop-blur-md border-b border-purple-900/30">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-extrabold gradient-text">DEVWEB.STUDIO</a>
+      <div class="space-x-6 text-sm font-semibold text-gray-300">
+        <a href="index.html" class="hover:text-purple-400">Fandraisana</a>
+        <a href="contact.html" class="text-purple-400">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- OPTION 7: Témoignages & OPTION 10: Contact / Réservation -->
+  <main class="pt-36 pb-20 px-6 max-w-6xl mx-auto space-y-16">
+    <!-- OPTION 7: Témoignages -->
+    <div class="space-y-8">
+      <div class="text-center space-y-2">
+        <h2 class="text-3xl font-extrabold gradient-text">Avis Mpanjifa</h2>
+        <p class="text-gray-400 text-sm">Izay lazain'ireo efa niara-niasa taminay</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="glass-card p-6 rounded-2xl space-y-3">
+          <p class="text-gray-300 text-sm italic">"Matihanina be ilay travail! Haingana ary manara-penitra amin'ny antsipiriany."</p>
+          <div class="font-bold text-purple-300 text-xs">— Rakotoarisoa H. (Mpitantana)</div>
+        </div>
+        <div class="glass-card p-6 rounded-2xl space-y-3">
+          <p class="text-gray-300 text-sm italic">"Nitombo avo roa heny ny comande tao amin'ny boutique en ligne-ko."</p>
+          <div class="font-bold text-pink-300 text-xs">— Sarah M. (Mode)</div>
+        </div>
+        <div class="glass-card p-6 rounded-2xl space-y-3">
+          <p class="text-gray-300 text-sm italic">"Avis 5/5, misy Admin kanto ary tsotra be ampiasaina."</p>
+          <div class="font-bold text-purple-300 text-xs">— Jean Marc (Freelance)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- OPTION 10: Formulaire Contact -->
+    <div class="glass-card p-8 rounded-3xl max-w-2xl mx-auto space-y-6 border border-purple-500/30">
+      <div class="text-center space-y-2">
+        <h1 class="text-3xl font-bold gradient-text">Alefaso ny Hafatrao</h1>
+        <p class="text-gray-400 text-sm">Hiverina aminao ao anatin'ny 24 ora izahay.</p>
+      </div>
+
+      <form id="publicContactForm" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-purple-300 mb-1">Anarana feno</label>
+          <input type="text" name="fullname" required class="w-full bg-slate-900 border border-purple-900/50 rounded-xl p-3 text-sm focus:outline-none focus:border-purple-500 text-white">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-purple-300 mb-1">Adresse Email</label>
+          <input type="email" name="email" required class="w-full bg-slate-900 border border-purple-900/50 rounded-xl p-3 text-sm focus:outline-none focus:border-purple-500 text-white">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-purple-300 mb-1">Tolotra ilaina</label>
+          <select name="service" class="w-full bg-slate-900 border border-purple-900/50 rounded-xl p-3 text-sm focus:outline-none focus:border-purple-500 text-white">
+            <option value="Starter">Pack Starter</option>
+            <option value="Pro">Pack Pro Business</option>
+            <option value="Custom">Custom Sur Devis</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-purple-300 mb-1">Hafatra / Antsipiriany</label>
+          <textarea name="message" rows="4" required class="w-full bg-slate-900 border border-purple-900/50 rounded-xl p-3 text-sm focus:outline-none focus:border-purple-500 text-white"></textarea>
+        </div>
+        <button type="submit" class="w-full gradient-bg py-3.5 rounded-xl font-bold shadow-lg shadow-purple-500/20 hover:opacity-90 transition">Alefa ny hafatra</button>
+      </form>
+    </div>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
